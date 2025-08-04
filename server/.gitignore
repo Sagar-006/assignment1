@@ -1,0 +1,15 @@
+# Node modules
+node_modules/
+
+# Environment files
+.env
+
+# TypeScript build output
+dist/
+
+# Log files
+*.log
+
+# IDE specific files
+.vscode/
+.DS_Store

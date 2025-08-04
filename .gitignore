@@ -1,0 +1,15 @@
+# Ignore IDE/config folders
+.qodo/
+
+# Ignore frontend & backend node modules
+client/node_modules
+server/node_modules
+
+# Ignore environment files
+client/.env
+server/.env
+
+# Build outputs
+client/dist
+server/dist
+client/build
