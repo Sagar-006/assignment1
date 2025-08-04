@@ -2,6 +2,7 @@ import { FaHome } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import toast from "react-hot-toast";
+import axios from "axios";
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -34,12 +35,12 @@ const Navbar = () => {
       <div className="flex items-center gap-4">
         {login ? (
           <div onClick={() => logOut()}>
-            <Link
-              to="/login"
+            <div
+              
               className="px-4 py-1 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-50 transition"
             >
               Logout
-            </Link>
+            </div>
           </div>
         ) : (
           <div>

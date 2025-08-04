@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import UserProfileCard from "../components/UserProfileCard";
 import axios from "axios";
+import Loading from "../components/Loading";
 
 interface UserProfile {
   avatarUrl?: string;
@@ -28,7 +29,11 @@ function Profile() {
         getData()
     },[])
 
-    if (!profile) return <p>User not found</p>;
+    if (!profile) return (
+      <div className="flex justify-center items-center mt-6 h-full w-full">
+        <Loading/>
+      </div>
+    );
 
   return (
     <div className="p-8 flex justify-center">
